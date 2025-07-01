@@ -6,8 +6,8 @@ In your Vercel project dashboard, add these environment variables:
 
 ### Clerk Authentication
 ```
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_your_actual_key_here
-CLERK_SECRET_KEY=sk_test_your_actual_key_here
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_bG9naWNhbC1nbG93d29ybS00OS5jbGVyay5hY2NvdW50cy5kZXYk
+CLERK_SECRET_KEY=sk_test_AGh36OpoiSY5Yf9SXeAkYyNxfelReGz9XPZd1rC0OB
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
