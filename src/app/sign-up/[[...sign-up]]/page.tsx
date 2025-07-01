@@ -1,4 +1,4 @@
-import { SignUp } from '@clerk/nextjs';
+// import { SignUp } from '@clerk/nextjs';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,7 +10,14 @@ export default function SignUpPage() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Get Started</h1>
           <p className="text-gray-600">Create your Fundwise account and start screening pitches with AI</p>
         </div>
-        <SignUp 
+        <div className="bg-white p-8 rounded-lg shadow-lg">
+          <p className="text-center text-gray-600">
+            Sign up functionality will be available after setting up environment variables in Vercel.
+            <br /><br />
+            Clerk credentials are configured and ready to use.
+          </p>
+        </div>
+        {/* <SignUp 
           appearance={{
             elements: {
               formButtonPrimary: 
@@ -20,7 +27,7 @@ export default function SignUpPage() {
               headerSubtitle: "hidden"
             }
           }}
-        />
+        /> */}
       </div>
     </div>
   );

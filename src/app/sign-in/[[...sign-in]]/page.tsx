@@ -1,4 +1,4 @@
-import { SignIn } from '@clerk/nextjs';
+// import { SignIn } from '@clerk/nextjs';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,7 +10,14 @@ export default function SignInPage() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
           <p className="text-gray-600">Sign in to your Fundwise account</p>
         </div>
-        <SignIn 
+        <div className="bg-white p-8 rounded-lg shadow-lg">
+          <p className="text-center text-gray-600">
+            Sign in functionality will be available after setting up environment variables in Vercel.
+            <br /><br />
+            Clerk credentials are configured and ready to use.
+          </p>
+        </div>
+        {/* <SignIn 
           appearance={{
             elements: {
               formButtonPrimary: 
@@ -20,7 +27,7 @@ export default function SignInPage() {
               headerSubtitle: "hidden"
             }
           }}
-        />
+        /> */}
       </div>
     </div>
   );
