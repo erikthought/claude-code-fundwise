@@ -31,8 +31,8 @@ Fundwise is an AI-driven startup screening assistant that helps venture capital 
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd fundwise-ui
+git clone https://github.com/erikthought/claude-code-fundwise.git
+cd claude-code-fundwise
 ```
 
 2. Install dependencies:
