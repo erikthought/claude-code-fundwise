@@ -1,4 +1,6 @@
-import { SignIn } from '@clerk/nextjs';
+// import { SignIn } from '@clerk/nextjs';
+
+export const dynamic = 'force-dynamic';
 
 export default function SignInPage() {
   return (
@@ -8,17 +10,13 @@ export default function SignInPage() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
           <p className="text-gray-600">Sign in to your Fundwise account</p>
         </div>
-        <SignIn 
-          appearance={{
-            elements: {
-              formButtonPrimary: 
-                "bg-blue-600 hover:bg-blue-700 text-sm normal-case",
-              card: "shadow-lg",
-              headerTitle: "hidden",
-              headerSubtitle: "hidden"
-            }
-          }}
-        />
+        <div className="bg-white p-8 rounded-lg shadow-lg">
+          <p className="text-center text-gray-600">
+            Authentication integration with Clerk.dev required.
+            <br />
+            Add your Clerk environment variables to enable sign in.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { UserButton } from "@clerk/nextjs";
+// import { ClerkProvider, UserButton } from "@clerk/nextjs";
+
+export const dynamic = 'force-dynamic';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -110,7 +112,7 @@ export default function DashboardPage() {
               <Settings className="h-4 w-4 mr-2" />
               Settings
             </Button>
-            <UserButton afterSignOutUrl="/" />
+            <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
           </div>
         </div>
       </header>

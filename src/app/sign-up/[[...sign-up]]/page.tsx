@@ -1,4 +1,6 @@
-import { SignUp } from '@clerk/nextjs';
+// import { SignUp } from '@clerk/nextjs';
+
+export const dynamic = 'force-dynamic';
 
 export default function SignUpPage() {
   return (
@@ -8,17 +10,13 @@ export default function SignUpPage() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Get Started</h1>
           <p className="text-gray-600">Create your Fundwise account and start screening pitches with AI</p>
         </div>
-        <SignUp 
-          appearance={{
-            elements: {
-              formButtonPrimary: 
-                "bg-blue-600 hover:bg-blue-700 text-sm normal-case",
-              card: "shadow-lg",
-              headerTitle: "hidden",
-              headerSubtitle: "hidden"
-            }
-          }}
-        />
+        <div className="bg-white p-8 rounded-lg shadow-lg">
+          <p className="text-center text-gray-600">
+            Authentication integration with Clerk.dev required.
+            <br />
+            Add your Clerk environment variables to enable sign up.
+          </p>
+        </div>
       </div>
     </div>
   );
